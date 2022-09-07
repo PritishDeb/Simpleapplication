@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts %}
+    <div class="viewbox">
+        <h3>User Details</h3>
+        <p>Name - {{ post.Name }}</p>
+        <p>Age - {{ post.Age }}</p>
+        <p>Place - {{ post.Place }}</p>
+    </div>
+
+    {% endfor %}
+{% endblock %}
